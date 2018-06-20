@@ -1,6 +1,7 @@
 # my-mern-todo-app
 
-This is todo list web app developed using MERN stack(MongoDB, Express, ReactJS, NodeJS). You can add, update and delete todos.
+This is todo list web app developed using MERN stack(MongoDB, Express, ReactJS, NodeJS). You can add, update and delete todos.<br><br>
+You should have mongodb installed on your machine to run this application.
 
 <h1>Instructions to run this web app(follow one by one).</h1>
 <ol start="1">
