@@ -14,3 +14,12 @@ You should have mongodb installed on your machine to run this application.
     <li>Open another terminal and go to react-redux-client directory and run <code>npm start</code></li>
     <li>Open browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
 </ol>
+
+<ol start="1">
+    <li><img src="screenshots/Screenshot from 2018-06-20 21-32-18.png" /></li>
+    <li><img src="Screenshot from 2018-06-20 21-33-06.png" /></li>
+    <li><img src="Screenshot from 2018-06-20 21-33-55.png" /></li>
+    <li><img src="Screenshot from 2018-06-20 21-34-33.png" /></li>
+    <li><img src="Screenshot from 2018-06-20 21-34-48.png" /></li>
+    <li><img src="Screenshot from 2018-06-20 21-32-55.png" /></li>
+</ol>
