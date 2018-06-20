@@ -21,5 +21,5 @@ You should have mongodb installed on your machine to run this application.
     <li><img src="screenshots/Screenshot from 2018-06-20 21-33-55.png" /></li>
     <li><img src="screenshots/Screenshot from 2018-06-20 21-34-33.png" /></li>
     <li><img src="screenshots/Screenshot from 2018-06-20 21-34-48.png" /></li>
-    <li><img src="screenshots/Screenshot from 2018-06-20 21-32-55.png" /></li>
+    <li><img src="screenshots/Screenshot from 2018-06-20 21-34-55.png" /></li>
 </ol>
