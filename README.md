@@ -11,5 +11,5 @@ This is todo list web app developed using MERN stack(MongoDB, Express, ReactJS, 
     <li><code>cd ..</code></li>
     <li>Open one terminal and go to express-server directory and run <code>npm start</code></li>
     <li>Open another terminal and go to react-redux-client directory and run <code>npm start</code></li>
-    <li>Open browser and go to http://localhost:3000</li>
+    <li>Open browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
 </ol>
