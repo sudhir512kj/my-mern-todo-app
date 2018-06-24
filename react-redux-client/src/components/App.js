@@ -3,6 +3,7 @@ import { Navbar, Nav, NavItem, MenuItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import "./App.css";
 import TodoForm from "./TodoForm";
+import MaterialIcon, { colorPallet } from "material-icons-react";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -36,7 +37,7 @@ export default class App extends React.Component {
         <Navbar inverse collapseOnSelect className="customNav">
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/#">Todo App</a>
+              <a href="/">Todo App</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -51,7 +52,10 @@ export default class App extends React.Component {
                 to={{ pathname: "/", query: {} }}
                 onClick={this.toggleAddTodo}
               >
-                <NavItem eventKey={1}>Add Todo</NavItem>
+                <NavItem eventKey={1}>
+                  <MaterialIcon icon="add_to_queue" size={15} color="#f4f6f7" />
+                  &nbsp;&nbsp;Add Todo
+                </NavItem>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>

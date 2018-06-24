@@ -1,6 +1,8 @@
 import React from "react";
 import { FormGroup, ControlLabel, FormControl, Button } from "react-bootstrap";
 
+const wellStyles = { maxWidth: 400, margin: "0 auto 10px" };
+
 const TodoEditForm = props => {
   return (
     <form
@@ -34,7 +36,13 @@ const TodoEditForm = props => {
         </div>
       </div>
       <FormGroup>
-        <Button type="submit" bsStyle="success" bsSize="large" block>
+        <Button
+          style={wellStyles}
+          type="submit"
+          bsStyle="primary"
+          bsSize="large"
+          block
+        >
           Submit
         </Button>
       </FormGroup>

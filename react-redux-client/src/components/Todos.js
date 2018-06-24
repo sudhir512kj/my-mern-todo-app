@@ -2,6 +2,8 @@ import React from "react";
 import { Alert, Glyphicon, Button, Modal } from "react-bootstrap";
 import { Link } from "react-router";
 import TodoEditForm from "./TodoEditForm";
+import MaterialIcon, { colorPallet } from "material-icons-react";
+import "./App.css";
 
 export default class Todos extends React.Component {
   constructor(props) {
@@ -10,6 +12,16 @@ export default class Todos extends React.Component {
     this.submitEditTodo = this.submitEditTodo.bind(this);
     this.hideDeleteModal = this.hideDeleteModal.bind(this);
     this.cofirmDeleteTodo = this.cofirmDeleteTodo.bind(this);
+
+    var today = new Date(),
+      date =
+        today.getFullYear() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-" +
+        today.getDate();
+
+    this.state = { date: date };
   }
 
   componentWillMount() {
@@ -56,6 +68,7 @@ export default class Todos extends React.Component {
     const editTodo = todoState.todoToEdit;
     return (
       <div className="col-md-12">
+        <h4>{this.state.date}</h4>
         <h3 className="centerAlign">Todos</h3>
         {!todos && todoState.isFetching && <p>Loading todos....</p>}
         {todos.length <= 0 &&
@@ -88,25 +101,28 @@ export default class Todos extends React.Component {
                     <td className="textCenter">
                       <Button
                         onClick={() => this.showEditModal(todo)}
-                        bsStyle="info"
                         bsSize="small"
                       >
-                        <Glyphicon glyph="pencil" />
+                        <MaterialIcon icon="create" size={15} color="#424242" />
                       </Button>
                     </td>
                     <td className="textCenter">
                       <Button
                         onClick={() => this.showDeleteModal(todo)}
-                        bsStyle="danger"
                         bsSize="small"
                       >
-                        <Glyphicon glyph="remove-circle" />
+                        <MaterialIcon
+                          icon="delete_forever"
+                          size={15}
+                          color="#424242"
+                        />
                       </Button>
                     </td>
                     <td className="textCenter">
-                      <Link to={`/${todo._id}`}>
-                        <h4>View Details</h4>
-                      </Link>{" "}
+                      <Button bsSize="xsmall" href={`/${todo._id}`}>
+                        <MaterialIcon icon="launch" size={15} color="#424242" />
+                        &nbsp; View Details
+                      </Button>
                     </td>
                   </tr>
                 ))}
